@@ -1,4 +1,4 @@
-# VG news
+# VG News
 
 Try: https://chrome.google.com/webstore/detail/efehmpikadfdbcabkelfcggeodojbkej/
 
