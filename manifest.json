@@ -1,0 +1,20 @@
+{
+	"name": "VG news",
+	"description": "Makes the front page of VG look like Hacker News.",
+	"manifest_version": 2,
+	"version": "0.3.0",
+
+	"icons": {
+		"128": "128.png"
+	},
+	
+	"content_scripts": [
+		{
+			"matches": ["http://*.vg.no/*"],
+			"js": ["jquery-3.1.1.min.js", "vgnews.js"]
+		}
+	],
+	"web_accessible_resources": [
+		"128.png"
+	]
+}
