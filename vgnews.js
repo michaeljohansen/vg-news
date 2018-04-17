@@ -155,16 +155,26 @@ const yCombify = () => {
 // Run all
 
 const runAll = () => {
-	// Remove basic stuff
-	blockAdBlockAds();
-	removeTopBar();
-	removeHeader();
-	removeSideBar();
-	removeFooterAndAllThatStuffDownThere();
-	// Remove article images
-	removeArticleImages();
-	// Ycombify
-	yCombify();
+	if (document.location.href === 'http://www.vg.no/') {
+		// Remove basic stuff
+		blockAdBlockAds();
+		removeTopBar();
+		removeHeader();
+		removeSideBar();
+		removeFooterAndAllThatStuffDownThere();
+		// Remove article images
+		removeArticleImages();
+		// Ycombify
+		yCombify();
+	}
+	else if (document.location.href.startsWith('http://www.vg.no/')) {
+		// Remove basic stuff
+		blockAdBlockAds();
+		removeTopBar();
+		removeHeader();
+		removeSideBar();
+		// removeFooterAndAllThatStuffDownThere(); // Makes the white BG cut off too early
+	}
 }
 
 $(document).ready(() => setTimeout(runAll, 2000));
