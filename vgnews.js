@@ -155,7 +155,7 @@ const yCombify = () => {
 // Run all
 
 const runAll = () => {
-	if (document.location.href === 'http://www.vg.no/') {
+	if (document.location.href === 'https://www.vg.no/') {
 		// Remove basic stuff
 		blockAdBlockAds();
 		removeTopBar();
@@ -167,7 +167,7 @@ const runAll = () => {
 		// Ycombify
 		yCombify();
 	}
-	else if (document.location.href.startsWith('http://www.vg.no/')) {
+	else if (document.location.href.startsWith('https://www.vg.no/')) {
 		// Remove basic stuff
 		blockAdBlockAds();
 		removeTopBar();
